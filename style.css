@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
 
+@font-face {
+    font-family: "Involve" , sans-serif;
+    src: url("assets/fonts/TTF/Involve-Regular.ttf");
+}
+
 :root{
     --main-red:#E11800;
     --main-grey:#A0A5AC;
@@ -24,6 +29,10 @@ body{
 }
 .grey{
     color: var(--main-grey);
+}
+
+.title{
+    font-family: "Unbounded", sans-serif;
 }
 
 .do-inner{
@@ -77,4 +86,35 @@ body{
 }
 .above-title{
     font-size: 22px;
+}
+
+.experience-container{
+    display: flex;
+    justify-content: space-between;
+}
+.experience-item{
+    padding: 50px;
+    width: 30%;
+    border-radius: 50px;
+    box-sizing: content-box;
+}
+
+.experience-item:hover{
+    box-shadow: 0px 21px 73px -36px rgba(0,0,0,0.63);
+
+}
+
+.experience-item:nth-child(2){
+    margin-top: 30px;
+}
+.experience-item:nth-child(3){
+    margin-top: 60px;
+}
+
+.experience-item-name{
+   padding: 35px 0;
+}
+
+.experience-item-arrow{
+    padding: 35px 0;
 }
