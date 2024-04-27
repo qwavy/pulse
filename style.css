@@ -118,3 +118,31 @@ body{
 .experience-item-arrow{
     padding: 35px 0;
 }
+
+@media all and (max-width: 430px) {
+    .experience-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-content:center ;
+    }
+    .experience-item{
+        width: 70%;
+        margin: auto;
+    }
+}
+
+@media (min-width: 431px) and (max-width: 730px) {
+    .experience-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-content:center ;
+    }
+    .experience-item{
+        width: 40%;
+        margin: auto;
+        padding: 100px;
+
+    }
+}
