@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+
+:root{
+    --main-red:#E11800;
+    --main-grey:#A0A5AC;
+}
+
+body{
+    max-width: 1280px;
+    margin: auto;
+    font-family: "Unbounded", sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#do{
+}
+
+.red{
+    color:var(--main-red);
+}
+.grey{
+    color: var(--main-grey);
+}
+
+.do-inner{
+    height: 450px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "title hashtag"
+        ". info";
+}
+
+.do-title{
+    grid-area: title;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.do-hashtag{
+    grid-area: hashtag;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.do-hashtag > span{
+    border: 1px solid var(--main-grey);
+    border-radius: 20px;
+    padding: 8px;
+}
+
+.do-info{
+    grid-area: info;
+    width: 80%;
+}
+.do-info > p{
+    text-align: start;
+    font-size: 26px;
+    line-height: 38px;
+}
+
+.do-info > p:nth-child(1){
+    text-indent: 80px;
+}
+
+.do-info > p:nth-child(2){
+    padding: 20px 0;
+}
+
+.title{
+    font-size: 70px;
+}
+.above-title{
+    font-size: 22px;
+}
